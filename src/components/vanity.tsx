@@ -5,7 +5,7 @@ const VanityAddressGenerator = () => {
   const [prefix, setPrefix] = useState("");
   const [suffix, setSuffix] = useState("");
   const [loading, setLoading] = useState(false);
-  const [foundKey, setFoundKey] = useState(null);
+  const [foundKey, setFoundKey] = useState<any>(null);
 
   const generateVanityAddress = async () => {
     setLoading(true);
